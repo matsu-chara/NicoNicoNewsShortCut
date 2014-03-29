@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "ニコニコ動画　ニュース用ショートカット",
+  "version": "1.0.2",
+  "description": "ニコニコ動画の動画視聴ページに表示されるニコニコニュースを操作するためのショートカットを追加（ただそれだけ）",
+  "icons": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.nicovideo.jp/watch/*"],
+      "js": ["js/nnnsc.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+      "scripts": [ "js/background.js" ]
+  }
+}
