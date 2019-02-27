@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://www.nicovideo.jp/watch/*"],
+      "matches": ["http://www.nicovideo.jp/watch/*", "https://www.nicovideo.jp/watch/*"],
       "js": ["js/nnnsc.js"],
       "run_at": "document_end"
     }
